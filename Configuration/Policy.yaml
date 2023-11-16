@@ -1,0 +1,11 @@
+privilegeTargets:
+  Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    'NeosRulez.Shop.Payment.Mollie:MollieControllerActions':
+      matcher: 'method(NeosRulez\Shop\Payment\Mollie\Controller\MollieController->.*Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'NeosRulez.Shop.Payment.Mollie:MollieControllerActions'
+        permission: GRANT

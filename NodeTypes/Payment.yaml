@@ -1,0 +1,54 @@
+'NeosRulez.Shop.Payment.Mollie:Payment.Mollie':
+  superTypes:
+    'NeosRulez.Shop.Payment:Payment.Generic': true
+    ui:
+      label: Mollie
+      icon: fab fa-stripe
+      group: payment
+      inspector:
+        groups:
+          document:
+            label: Mollie
+            icon: fab fa-stripe
+    properties:
+#      successPage:
+#        type: reference
+#        ui:
+#          label: Success page
+#          reloadIfChanged: true
+#          inspector:
+#            group: document
+#            position: after faicon
+      apiKey:
+        type: string
+        ui:
+          label: API-Schlüssel
+          reloadIfChanged: true
+          inspector:
+            group: document
+            position: after faicon
+      webhookEndpointKey:
+        type: string
+        ui:
+          label: Webhook endpoint kex
+          reloadIfChanged: true
+          inspector:
+            group: document
+            position: after apiKey
+      args:
+        type: string
+        ui:
+          label: Argumente
+          reloadIfChanged: true
+          inspector:
+            group: document
+            position: after webhookEndpointKey
+      payment:
+        type: string
+        ui:
+          label: Zahlung
+          reloadIfChanged: true
+          inspector:
+            group: document
+            position: after webhookEndpointKey
+

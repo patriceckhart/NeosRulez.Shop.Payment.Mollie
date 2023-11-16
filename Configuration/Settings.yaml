@@ -1,0 +1,17 @@
+Neos:
+  Flow:
+    mvc:
+      routes:
+        'NeosRulez.Shop.Payment.Mollie': true
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.Shop.Payment.Mollie: true
+
+NeosRulez:
+  Shop:
+    Payment:
+      payments:
+        mollie:
+          nodeType: 'NeosRulez.Shop.Payment.Mollie:Payment.Mollie'
+          class: 'NeosRulez\Shop\Payment\Mollie\Payment\Mollie'

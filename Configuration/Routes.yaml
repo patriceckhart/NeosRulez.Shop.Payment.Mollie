@@ -1,0 +1,15 @@
+-
+  uriPattern: 'mollie/payment/{orderNumber}'
+  defaults:
+    '@package': 'NeosRulez.Shop.Payment.Mollie'
+    '@controller': 'Mollie'
+    '@action': 'payment'
+  appendExceedingArguments: true
+
+-
+  uriPattern: 'mollie/webhook'
+  defaults:
+    '@package': 'NeosRulez.Shop.Payment.Mollie'
+    '@controller': 'Mollie'
+    '@action': 'webhook'
+  appendExceedingArguments: true
